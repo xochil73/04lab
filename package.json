@@ -1,0 +1,19 @@
+{
+  "name": "04lab",
+  "version": "1.0.0",
+  "description": "Buffer Lab",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xochil73/04lab.git"
+  },
+  "author": "Xochil Squaglia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xochil73/04lab/issues"
+  },
+  "homepage": "https://github.com/xochil73/04lab#readme"
+}
