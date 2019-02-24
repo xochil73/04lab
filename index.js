@@ -1,16 +1,34 @@
 'use strict'
 
-
-const bufferArray = ['58,6F,63,68,69,6C', '4A,6F,73,65,70,68', '4C,75,63,69,97,6E,61'];
-const testBuffer =
-
-
 const fs = require('fs');
-fs.writeFile("/tmp/test", "Hey there!", function(err) {
-    if(err) {
-        return console.log(err);
-    }
-    else
+const os = require('os');
 
-    console.log("The file was saved!");
+//xochil - create the string of code to be sent to buffer
+
+const code = `
+            'use strict';\
+            const names = ['Meg', 'Ann', 'Mae'];";\
+            names.forEach(names => console.log(names));\
+            `
+
+// split code into ministrings
+const miniStrings = code.split();
+
+//create a buffer for ministrings to be written into
+const myBuffer = Buffer.alloc(100);
+
+//take the split string, switch it to the proper characters and write it into the new buffer
+function writeToBuffer(string)  {
+    miniStrings.forEach(ms => myBuffer.write(ms.charCodeAt(0)));
+};
+
+
+writeToBuffer;
+
+
+//take the new buffer and open it in a new file loop.js
+fs.writeFile('files/loop.js', myBuffer, (err) => {
+    if(err) console.log(err);
+    console.log('done');
 });
+
