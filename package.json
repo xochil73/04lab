@@ -16,7 +16,5 @@
     "url": "https://github.com/xochil73/04lab/issues"
   },
   "homepage": "https://github.com/xochil73/04lab#readme",
-  "dependencies": {
-    "quokka": "0.0.7"
-  }
+  "dependencies": {}
 }
