@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/xochil73/04lab#readme",
   "dependencies": {
-    "quokka": "0.0.7"
+    "quokka": "0.0.7",
+    "string": "<= 3.3.3"
   }
 }
