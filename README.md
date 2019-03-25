@@ -10,9 +10,6 @@
 * [travis]
 
 
-#### Documentation
-* [swagger](http://xyz.com) (API assignments only)
-* [jsdoc](http://xyz.com) (All assignments)
 
 ### Modules
 #### `index.js`
@@ -22,16 +19,6 @@
             if(err) console.log(err);
             console.log('done');
         });`
-Usage Notes or examples
-
-###### `bar(array) -> array`
-Usage Notes or examples
-
-### Setup
-#### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
-
 #### Running the app
 * `npm start`
 * Endpoint: `fs.writeFile('files/loop.js', myBuffer, (err) => {
@@ -43,9 +30,5 @@ Usage Notes or examples
   * Returns a three names with console.log.
   
 #### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+* npm run test
 
-#### UML
-Link to an image of the UML for your application and response to events

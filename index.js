@@ -18,7 +18,8 @@ const miniStrings = code.split();
 const myBuffer = Buffer.alloc(code.length);
 
 //take the split string, switch it to the proper characters and write it into the new buffer
-function writeToBuffer(string)  {
+function writeToBuffer(string)
+{console.log(myBuffer);
     string.forEach(ms => myBuffer.write(ms));
 };
 
@@ -32,3 +33,4 @@ fs.writeFile('files/loop.js', myBuffer, (err) => {
     console.log('done');
 });
 
+module.export = writeToBuffer;
